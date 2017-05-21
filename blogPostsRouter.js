@@ -68,7 +68,7 @@ router.put('/:id', jsonParser, (req, res) => {
 		publishDate: req.body.publishDate
 	});
 	console.log(updatedPost);
-	res.status(204).json(updatedPost);
+	res.status(200).json(updatedPost);
 });
 
 module.exports = router;
